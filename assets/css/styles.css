@@ -59,25 +59,6 @@
   }
 }
 
-/*========== Variables Dark theme ==========*/
-body.dark-theme {
-  /* HSL color mode */
-  --first-color-second: hsl(var(--hue-color), 30%, 8%);
-  --title-color: hsl(var(--hue-color), 8%, 95%);
-  --text-color: hsl(var(--hue-color), 8%, 75%);
-  --input-color: hsl(var(--hue-color), 29%, 16%);
-  --body-color: hsl(var(--hue-color), 28%, 12%);
-  --container-color: hsl(var(--hue-color), 29%, 16%);
-  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
-  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
-}
-
-/*========== Button Dark/Light ==========*/
-.nav__btns {
-  display: flex;
-  align-items: center;
-}
-
 .change-theme {
   font-size: 1.25rem;
   color: var(--title-color);
@@ -176,9 +157,11 @@ img {
   align-items: center;
 }
 
-.nav__logo, .nav__toggle {
-  color: var(--title-color);
-  font-weight: var(--font-medium);
+/* the log name David at the top of the page in the navigation bar */
+.nav__logo {
+  font-size: 40px;
+  color: var(--title-color); 
+  font-weight: var(--font-medium); 
 }
 
 .nav__logo:hover {
@@ -186,6 +169,8 @@ img {
 }
 
 .nav__toggle {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
   font-size: 1.1rem;
   cursor: pointer;
 }
